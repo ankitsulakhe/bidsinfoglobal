@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bidsinfoglobal/static/css/main.073c9b0a.css",
-    "main.js": "/bidsinfoglobal/static/js/main.febb1681.js",
+    "main.js": "/bidsinfoglobal/static/js/main.fde1558a.js",
     "static/js/787.20cdf53d.chunk.js": "/bidsinfoglobal/static/js/787.20cdf53d.chunk.js",
     "static/media/about.jpg": "/bidsinfoglobal/static/media/about.6b73fc60b62f7528ac9e.jpg",
     "static/media/map.png": "/bidsinfoglobal/static/media/map.390c425edf46634a76e6.png",
@@ -9,11 +9,11 @@
     "static/media/logo.jpg": "/bidsinfoglobal/static/media/logo.96dc4c1272d7ec77c64e.jpg",
     "index.html": "/bidsinfoglobal/index.html",
     "main.073c9b0a.css.map": "/bidsinfoglobal/static/css/main.073c9b0a.css.map",
-    "main.febb1681.js.map": "/bidsinfoglobal/static/js/main.febb1681.js.map",
+    "main.fde1558a.js.map": "/bidsinfoglobal/static/js/main.fde1558a.js.map",
     "787.20cdf53d.chunk.js.map": "/bidsinfoglobal/static/js/787.20cdf53d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.febb1681.js"
+    "static/js/main.fde1558a.js"
   ]
 }
