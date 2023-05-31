@@ -9,6 +9,7 @@ import transportation from "./transportation.png";
 import airport from "./airport.png";
 import architect from "./architect.png";
 import SearchBar from "../searchBar/SearchBar";
+import ProfileSidebarPage from "../ProfileSidebar/ProfileSidebarPage";
 class HomePage extends Component {
   render() {
     return (
@@ -21,44 +22,7 @@ class HomePage extends Component {
                 <SearchBar></SearchBar>
               </div>
               <div className="col-md-4 bg-grey">
-                <div className="homeLoginMain" id="afterLogin">
-                  <div className="section-title pb-0">
-                    <h3>My Profile</h3>
-                  </div>
-                  <div className="profileData">
-                    <div className="account-login-tile">
-                      <h2>Account Information</h2>
-                    </div>
-                    <div className="account-login-Data">
-                      <div className="account-login-des">
-                      <i class="bi bi-people"></i> <strong>Name : </strong> Ketan Patel ( bts10001)
-                      </div>
-                      <div className="account-login-des">
-                      <i class="bi bi-clock"></i> <strong>Last Login : </strong> 30 May 2023 10:44:12
-                      </div>
-                      <div className="account-login-des">
-                      <i class="bi bi-award"></i> <strong>Validty : </strong> 10 May 2023
-                      </div>
-                      <div className="account-login-des">
-                        <a className="visitiPeofile"> <i class="bi bi-globe"></i>  View Profile</a>
-                      </div>                      
-                    </div>
-                  </div>
-                  <div className="profileData">
-                    <div className="account-login-tile">
-                      <h2>My Dashboard</h2>
-                    </div>
-                    <div className="account-login-Data">                      
-                      <div className="account-login-des">
-                        <div className="prosLink"> <i class="bi bi-globe"></i><a className="visitiPeofile">Home</a></div>
-                        <div className="prosLink"> <i class="bi bi-globe"></i><a className="visitiPeofile">Tender</a></div>
-                        <div className="prosLink"> <i class="bi bi-globe"></i><a className="visitiPeofile">Project</a></div>
-                        <div className="prosLink"> <i class="bi bi-globe"></i><a className="visitiPeofile">Contract Awards</a></div>
-                        <div className="prosLink"> <i class="bi bi-globe"></i><a className="visitiPeofile">E - Procurement</a></div>
-                      </div>                     
-                    </div>
-                  </div>
-                </div>
+               <ProfileSidebarPage></ProfileSidebarPage>
                 <div className="homeLoginMain d-none">
                   <div className="section-title pb-0">
                     <h3>Customer Login</h3>

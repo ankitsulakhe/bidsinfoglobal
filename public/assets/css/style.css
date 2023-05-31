@@ -2859,3 +2859,53 @@ div#afterLogin .profileData h2 {
 .account-login-Data .account-login-des .prosLink:last-child {
   margin-bottom: 0;
 }
+section.profileInner {
+    padding: 0;
+}
+section.profileInner .homeLoginMain {
+    padding: 30px 10%;
+}
+section.profileInner .signupPagePadding .homeLoginMain {
+  padding: 30px 0;
+}
+.mainBoxLogin p.wid100.textLeft {
+  font-size: 20px;
+  background: #003c5e;
+  padding: 8px;
+  color: #fff;
+}
+.flex_Btn_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.flex_Btn_div button.loginBtn, button.commonBtn.resetBtn {
+  margin: 10px 10px;
+  padding: 8px 60px;
+}
+
+button.commonBtn.resetBtn {
+  background: #041c36;
+}
+.d-flex.flex-wrap.signupflex {
+  margin-bottom: 4%;
+}
+.form-group.mb-40.wid-100 {
+  width: 100%;
+}
+.indTextFlex {
+  display: flex;
+  align-items: center;
+}
+
+.indTextFlex label {
+  margin-right: 10px;
+  padding-bottom: 0;
+}
+
+.indTextFlex label input {
+  margin-right: 12px;
+  display: inline-block;
+}

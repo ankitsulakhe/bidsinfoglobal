@@ -27,6 +27,9 @@ import  termandcondition from "./pages/termandcondition/termandcondition";
 import  grantsDetails from "./pages/grants/grantsDetails";
 import  EProcurement from "./pages/EProcurement/EProcurement";
 import  advanceSearch from "./pages/advanceSearch/advanceSearch";
+import  ProfilePage from "./pages/Profile/ProfilePage";
+import  businessProfile from "./pages/businessProfile/businessProfile";
+import  passwordChange from "./pages/passwordChange/passwordChange";
 
 
 function App() {
@@ -269,6 +272,11 @@ function App() {
                       Services
                     </Link>
                   </li>
+                  <li>
+                    <Link to="ProfilePage">
+                      Profile
+                    </Link>
+                  </li>
                 </ul>
                 <i className="bi bi-list mobile-nav-toggle"></i>
               </nav>
@@ -299,6 +307,9 @@ function App() {
             <Route path="grantsDetails" Component={grantsDetails} />                
             <Route path="EProcurement" Component={EProcurement} /> 
             <Route path="advanceSearch" Component={advanceSearch} /> 
+            <Route path="ProfilePage" Component={ProfilePage} /> 
+            <Route path="businessProfile" Component={businessProfile} />    
+            <Route path="passwordChange" Component={passwordChange} />             
           </Routes>
           <div className='footermain'>                       
             <footer id="footer">            

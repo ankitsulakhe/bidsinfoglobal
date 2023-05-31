@@ -233,6 +233,11 @@ class Header extends Component {
                       Services
                     </Link>
                   </li>
+                  <li>
+                    <Link to="ProfilePage">
+                      profile
+                    </Link>
+                  </li>
                 </ul>
                 <i className="bi bi-list mobile-nav-toggle"></i>
               </nav>
