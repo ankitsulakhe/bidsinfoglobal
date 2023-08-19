@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/homePage";
 import logo from "./logo.jpg";
@@ -37,6 +37,18 @@ function App() {
     //Simulates a request; makes a "promise" that'll run for 2.5 seconds
     return new Promise((resolve) => setTimeout(() => resolve(), 2500));
   }
+  const [isActive, setIsActive] = useState(true);
+  const [DropdownMenu, setDropdownMenu] = useState(null);
+
+
+  const toggleClass = () => {
+    setIsActive(!isActive);
+  };
+
+  const DropdownMenuOpen = (elementId) => {
+    setDropdownMenu(elementId === DropdownMenu ? null : elementId);
+  };
+
   useEffect(() => {
     someRequest().then(() => {
       const loaderElement = document.querySelector(".loaderPre");
@@ -68,11 +80,9 @@ function App() {
                     </Link>
                   </li>
                   <li>
-                  <li>
                     <Link to="EProcurement" className="nav-link scrollto ">
                       E - Procurement
-                    </Link>                    
-                  </li>                  
+                    </Link>                 
                   </li>
                   <li>
                     <Link to="contact" className="nav-link scrollto ">
@@ -99,7 +109,7 @@ function App() {
                 <img src={logo} alt="main logo" className="logo" />
              </Link>
 
-              <nav id="navbar" className="navbar">
+              <nav id="navbar"  className={`${isActive ? 'navbar' : 'navbar-mobile'}`}>
                 <ul>
                   <li>
                     <Link to="">Home</Link>
@@ -107,8 +117,8 @@ function App() {
                   <li>
                     <Link to="about">About Us</Link>
                   </li>
-                  <li class="dropdown">
-                    <a href="#">
+                  <li  className={`dropdown ${DropdownMenu === 'element1' ? 'Open_dd_mobile' : ''}`} onClick={() => DropdownMenuOpen('element1')}>
+                    <a href="javascript:void(0)">
                       <span>Tenders</span> <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul>
@@ -202,8 +212,8 @@ function App() {
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown">
-                    <a href="#">
+                  <li className={`dropdown ${DropdownMenu === 'element2' ? 'Open_dd_mobile' : ''}`} onClick={() => DropdownMenuOpen('element2')}>
+                    <a href="javascript:void(0)">
                       <span>Project</span> <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul>
@@ -276,9 +286,34 @@ function App() {
                     <Link to="ProfilePage">
                       Profile
                     </Link>
+                  </li>                  
+                  <li className="ForMobileOnly">
+                  <Link to="advanceSearch">                    
+                      Advanced Search                    
+                    </Link>
                   </li>
+                  <li className="ForMobileOnly">
+                    <Link to="EProcurement">
+                      E - Procurement
+                    </Link>                 
+                  </li>
+                  <li className="ForMobileOnly">
+                    <Link to="contact">
+                        Contact Us
+                    </Link>
+                  </li>
+                  <li className="ForMobileOnly">
+                    <Link to="subscribePage">
+                      Subscribe
+                    </Link>                    
+                  </li>
+                  <li className="ForMobileOnly">
+                    <Link to="login">
+                      Login / Register
+                    </Link>
+                  </li>     
                 </ul>
-                <i className="bi bi-list mobile-nav-toggle"></i>
+                <i className="bi bi-list mobile-nav-toggle clickEvent" onClick={toggleClass}></i>
               </nav>
             </div>
           </header>

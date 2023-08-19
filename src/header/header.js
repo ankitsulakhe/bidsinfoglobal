@@ -1,8 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, useState  } from "react";
 import logo from "./logo.jpg";
 import {BrowserRouter as Router, Link, Route,Routes} from 'react-router-dom';
 class Header extends Component {
   render() {
+  const [isActive, setIsActive] = useState(false);
+  const toggleClass = () => {
+    setIsActive(!isActive);
+  };
     return (
       <div className="headermain">
          <Router>
@@ -60,7 +64,7 @@ class Header extends Component {
                 <img src={logo} alt="main logo" className="logo" />
              </Link>
 
-              <nav id="navbar" className="navbar">
+              <nav id="navbar" className="navbar {`box ${isToggled ? 'active' : ''}`}">
                 <ul>
                   <li>
                     <Link to="">Home</Link>

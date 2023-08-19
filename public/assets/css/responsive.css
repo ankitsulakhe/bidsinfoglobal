@@ -13,10 +13,29 @@
 }
 
 @media (max-width:767px) {
+    .ForMobileOnly{
+        display: block !important;
+    }
+    li.dropdown.Open_dd_mobile ul {
+        display: block;
+        margin: 5px 0;
+        padding: 0;
+    }
+    li.dropdown.Open_dd_mobile ul li ul {
+        margin: 0;
+    }
     
+    li.dropdown.Open_dd_mobile ul li.dropdown a {display: block;width: 100%;padding: 5px 15px;font-weight: 500;font-size: 14px;}
+    
+    li.dropdown.Open_dd_mobile ul li.dropdown ul a {
+        padding: 4px 15px;
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
 
 @media only screen and (max-width:680px){
+    
     .form-group.mb-40.wid-30 {
         width: 100%;
     }
@@ -38,7 +57,7 @@
         width: 49%;
     }
     .selectButton {
-        width: 50%;
+        width: 35%;
         margin: 20px auto 10px auto;
     }
     .searcHhome {
